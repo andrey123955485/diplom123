@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+    <script src="{% static 'js/auth.js' %}" defer></script>
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="container_main">
+        <!-- Шапка без авторизации -->
+        <header class="header_main">
+            <div class="header_logo">
+                <h1>Система управления складом</h1>
+            </div>
+            <div class="header_auth">
+                <!-- Убираем проверку авторизации, если не нужно отображать имя пользователя -->
+                <span id="user-name">Добро пожаловать</span>
+            </div>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav_menu">
+            <ul class="nav_list">
+                <li class="nav_item"><a class="nav_link" href="/inventory/">Текущие остатки</a></li>
+                <li class="nav_item"><a class="nav_link" href="{% url 'add_item' %}">Добавить товар</a></li>
+                <li class="nav_item"><a class="nav_link" href="/shipments/">История отгрузок</a></li>
+                <li class="nav_item"><a class="nav_link" href="/reports/">Отчеты и аналитика</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основное содержимое -->
+        <main class="content_main">
+            <section class="section_dashboard">
+                <h2>Обзор склада</h2>
+                <p>Количество товаров на складе: <strong>124</strong></p>
+                <p>Свободное место на складе: <strong>35%</strong></p>
+                <p>Последнее обновление данных: <strong>27 ноября 2024</strong></p>
+            </section>
+            <section class="section_actions">
+                <h2>Быстрые действия</h2>
+                <button class="button_action button_dobavlenie" onclick="location.href='/inventory/'">Просмотр товаров</button>
+                <button class="button_action button_dobavlenie" onclick="location.href='/add-item/'">Добавить товар</button>
+                <button class="button_action button_otchet" onclick="location.href='/reports/'">Создать отчет</button>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer_main">
+            <p>&copy; 2024 Складская система. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>

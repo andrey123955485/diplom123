@@ -1,0 +1,127 @@
+/*home css*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container_main {
+    margin: 0 auto;
+    padding: 40px; /* Установлен padding для внутреннего отступа */
+}
+
+.header_main {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav_menu {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+
+.nav_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_item {
+    margin: 0 10px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.content_main {
+    padding: 20px;
+}
+
+.section_dashboard,
+.section_actions {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.button_action {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.button_action:hover {
+    background-color: #0056b3;
+}
+
+.button_dobavlenie {
+    background-color: #28a745;
+}
+
+.button_dobavlenie:hover {
+    background-color: #218838;
+}
+
+.button_otchet {
+    background-color: #17a2b8;
+}
+
+.button_otchet:hover {
+    background-color: #117a8b;
+}
+
+.footer_main {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    color: #666;
+    margin-top: auto;
+}
+/*auth home*/
+.header_auth {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input_auth {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.button_login {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button_login:hover {
+    background-color: #218838;
+}
+/*home css*/
+
+/*auth home*/
